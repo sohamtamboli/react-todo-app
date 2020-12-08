@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
+import Todo from "./Todo";
 
 function TodoList() {
+	const [todo, setTodo] = useState();
 	return (
 		<div>
-			<h1>Hello</h1>
+			<ul>
+				<Todo />
+			</ul>
 		</div>
 	);
 }
