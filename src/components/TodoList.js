@@ -1,12 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import Todo from "./Todo";
 
-function TodoList() {
-	const [todo, setTodo] = useState();
+function TodoList({ todoList }) {
 	return (
-		<div>
+		<div className='list-container'>
 			<ul>
-				<Todo />
+				{todoList.map((singleTodo, index) => (
+					<Todo text={singleTodo.text} key={index} />
+				))}
 			</ul>
 		</div>
 	);
