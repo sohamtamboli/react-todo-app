@@ -31,6 +31,9 @@ body {
 .input-field:focus {
 	outline: none;
 }
+.input-button:focus {
+	outline: none;
+}
 
 .input-container > .input-button {
 	padding: 12px;
