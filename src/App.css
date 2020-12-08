@@ -22,6 +22,11 @@ body {
 	padding: 2em 0;
 	text-align: center;
 }
+.github-link {
+	position: absolute;
+	top: 2em;
+	right: 2em;
+}
 
 .input-container > .input-field {
 	padding: 12px;
